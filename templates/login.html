@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static', path='style/style.css')}}">
+    <title>login</title>
+</head>
+<body>
+    <form class="form_register" name="user">
+        <a href="/">
+            <h1 class="header_logo">    
+                Ecommerce
+            </h1>
+        </a>
+        
+    
+        <h3 class="user_type">Login</h3>
+        <div>
+            <input class="register_input" name="nome" type="text" id="nome_user" placeholder="Digite seu nome">
+        </div>
+        
+        <div>   
+            <input class="register_input" name="email" type="email" id="email_user" placeholder="Digite seu e-mail">
+        </div>
+        <div>
+            <input class="register_input" type="password" name="password_user" id="password_user" placeholder="Digite Sua Senha">
+        </div>
+        
+        <div>
+            <button class="btn_enviar_user">Enviar</button>
+            <span> <a href="/register-page/">Create User</a></span>
+        </div>
+       
+    </form>
+    
+    <script src ="{{url_for('static', path='script/login_user.js')}}" type="module"></script>
+
+</body>
+</html>

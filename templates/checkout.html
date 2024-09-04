@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="{{url_for('static', path='style/style.css')}}">
+    </head>
+<body>
+    <header>
+        <div class="content_header">
+            <a href="/">
+                <h1 class="header_logo">    
+                    <img src="{{url_for('static',path='image/logo.png')}}"
+                alt="image logo">
+                </h1>
+            </a>
+            <div class="content_search">
+                <input class="input_search" type="search" placeholder="Pesquisar">
+                <button class="btn_search_icon">
+                <img src="{{url_for('static',path='image/search.png')}}" alt="">
+            </button>
+            </div>
+            <span class="header_login"><a href="/login/">Login</a></span>
+            <div class="content_account">
+                <img class="account_image"  src="{{url_for('static',path='image/profile.svg')}}" alt="profle image user" hidden>
+                <button class="header_myaccount" hidden>myaccount</button>
+            </div>
+            
+        </div>
+        <div class="header_category">
+            <div class="category_feminine">
+                <a class="category" href="/products-gender/Feminino">Feminino</a>
+            </div>
+            
+            <div class="category_masculine">
+                <a class="category" href="/products-gender/Masculino">Masculino</a>
+            </div>
+            
+        </div>
+    </header>
+
+
+    <main class="content_checkout">
+        <img src="{{url_for('static',path='image/Confirm.png')}}" alt="imagem do icone checado">
+        <h2>Pedido Feito com Sucesso verifique em seus pedidos <a href="/user-info/">pedidos</a></h2>
+    </main>
+
+    
+</body>
+</html>

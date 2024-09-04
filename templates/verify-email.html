@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', path='style/verify_email.css')}}">
+    <title>verify - email</title>
+</head>
+<body>
+    <main>
+        <img class="form_register_img" src="{{url_for('static',path='image/Confirm.png')}}" alt="image logo">
+        <h1>{{message}}!!!</h1>
+        <p>Agora {{username}} voce pode logar em sua conta, Obrigado Por escolher nossa Loja</p>
+        <a class="home-btn" href="/">Home</a>
+    </main>
+    
+</body>
+</html>

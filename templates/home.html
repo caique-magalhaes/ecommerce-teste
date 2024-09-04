@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static', path='style/style.css')}}">
+</head>
+<body>
+    <header>
+        <div class="content_header">
+            <a href="/">
+                <h1 class="header_logo">    
+                    Ecommerce
+                </h1>
+            </a>
+            <div class="content_search">
+                <input class="input_search" type="search" placeholder="Pesquisar">
+                <button class="btn_search_icon">
+                <img src="{{url_for('static',path='image/search.png')}}" alt="">
+            </button>
+            </div>
+            <span class="header_login"><a href="/login/">Login</a></span>
+            <div class="content_account">
+                <img class="account_image"  src="{{url_for('static',path='image/profile.svg')}}" alt="profle image user" hidden>
+                <button class="header_myaccount" hidden>myaccount</button>
+            </div>
+            
+        </div>
+        <div class="header_category">
+            <div class="category_feminine">
+                <a class="category" href="/products-gender/Feminino">Feminino</a>
+            </div>
+            
+            <div class="category_masculine">
+                <a class="category" href="/products-gender/Masculino">Masculino</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="content_banner">
+            <img class="banner" src="{{url_for('static',path='image/banner-1.png')}}" alt="imagem do banner com a promo">
+
+        </section>
+        <section class="content_product">
+            <h2 class="product_title">Produtos</h2>
+            <ul class="content_products">
+            </ul>
+        </section>
+        
+    </main>
+
+
+    <footer>
+        <div class="content_footer">
+            <h1 class="header_logo">    
+                Ecommerce
+            </h1>
+            <div class="footer_info">
+                <div class="footer_social">
+                    <h3>Midias Sociais</h3>
+                    <a target="_blank" href="https://www.instagram.com/">
+                        <i class="social_instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    
+                    <a target="_blank" href="https://www.tiktok.com/">
+                        <i class="social_tiktok"></i>
+                        <span>TikTok</span>
+                    </a>
+                </div>
+                
+                <div class="footer_category">
+                    <h3>Categoria</h3>
+                </div> 
+            </div>
+        </div>
+                
+
+            <p>@Stark</p>
+    </footer>
+    
+    <script src="{{url_for('static', path='script/showProducts.js')}}" type="module"></script>
+    <script src="{{url_for('static', path='script/verifyOnline.js')}}" type="module"></script>
+</body>
+
+</html>
