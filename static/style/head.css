@@ -1,0 +1,100 @@
+header{
+    width: 100%;
+    margin-top:1em;
+}
+.content_header a{
+    text-decoration: none;
+}
+.header_logo{
+    font-size: 32px;
+    color: var(--fourth-color);
+}
+.header_category{
+    margin-top: 1em;
+}
+.content_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content_header span{
+    text-transform: uppercase;
+}
+.content_search{
+    display: flex;
+    width: 40%;
+}
+.input_search{
+    width: 60%;
+    background-color: var(--third-color);
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid var(--secound-color);
+    border-radius: 32px 0 0 32px;
+}
+.btn_search_icon{
+    background-color: var(--fourth-color);
+    border: 0;
+    border-radius: 0 32px 32px 0;
+    padding: 8px;
+    cursor: pointer;
+}
+.content_account{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.content_account a, .content_account button,.header_login a{
+    color: var(--fourth-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.content_account button{
+    border: 0;
+    background-color: var(--first-color);
+    line-height: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.content_account img{
+    cursor: pointer;
+}
+.header_category{
+    text-transform: uppercase;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--secound-color);
+    border-top: 1px solid var(--secound-color);
+    box-sizing: border-box;
+    padding: 0px;
+    
+
+}
+
+.category{
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--fourth-color);
+    height: 34px;
+    width: 100%;
+    align-content: center;
+}
+.category_feminine,.category_masculine{
+    width: 50%;
+    height: 34px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.category_feminine{
+    border-right: 1px solid var(--secound-color);
+}
+
+.category:hover{
+    background-color: var(--third-color);
+}

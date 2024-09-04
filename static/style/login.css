@@ -1,0 +1,58 @@
+.content_form_register{
+    display: flex;
+    justify-content: space-around;
+    border-right: 1px solid var(--fiveth-color);
+}
+.form_register{
+    display: block;
+    width: 40%;
+    height: 20%;
+    margin: 1em auto;
+    
+}
+.form_register_img{
+    display: block;
+    margin: 4em auto;
+    text-align: center;
+}
+.register_input{
+    width: 100%;
+    margin-top: 1em;
+    border: 1px solid var(--fiveth-color);
+    padding: 8px;
+    border-radius: 8px;
+}
+.user_type,.form_register h3,.content_form_title{
+    text-transform: uppercase;
+    color: var(--fourth-color);
+    margin-top: 1em;
+}
+.content_form_title{
+    text-align: center;
+    border-top: 1px solid var(--fiveth-color);
+    border-bottom: 1px solid var(--fiveth-color);
+    width: 10%;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+.form_register img{
+    margin-left: 1em;
+}
+
+.btn_enviar_user,.btn_enviar_admin{
+    margin-top: 1em;
+    border: 0;
+    background-color: var(--fourth-color);
+    border-radius: 8px;
+    padding: 16px;
+    color: var(--first-color);
+    cursor: pointer;
+}
+.form_register a{
+    color: var(--fourth-color);
+    text-decoration: none;
+}
+
+.form_register a:hover{
+    text-decoration: underline;
+}

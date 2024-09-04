@@ -1,0 +1,10 @@
+.content_checkout{
+    margin-top: 4em;
+    text-align: center;
+    font-size: 24px;
+}
+
+.content_checkout a{
+    color: var(--fiveth-color);
+    text-decoration: none;
+}

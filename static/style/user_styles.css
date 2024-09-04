@@ -1,0 +1,128 @@
+.user_content{
+    display: flex;
+    margin-top: 10em;
+}
+.user_info_content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+    border: 1px solid var(--fiveth-color);
+    margin-bottom: 5em;
+}
+.user_info{
+    width: 70%;
+}
+
+.user_order,.create_product,.send_image{
+    border-top:1px solid var(--fiveth-color) ;
+    padding: 1em 0;
+    cursor: pointer;
+}
+.user_all_info{
+    border-top: 1px solid var(--fiveth-color);
+    padding: 1em 0;
+    cursor: pointer;
+}
+
+.account_image_perfil{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2em;
+    align-self: center;
+}
+.btn_log-off,.submit_product_info,.submit_product_image{
+    border: 0;
+    background-color: var(--fourth-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 2em 0;
+    color: var(--first-color);
+    cursor: pointer;
+}
+.user_profile{
+    margin-left: 10em;
+    border: 1px solid var(--fiveth-color);
+    
+   
+}
+
+.user_email{
+    border-top: 1px solid var(--fiveth-color);
+}
+.user_order_product{
+    margin-top: 1em;
+    margin-left: 10em;
+    border: 1px solid var(--fiveth-color);
+    box-sizing: border-box;
+    display: flex;
+}
+.user_order,.send_image{
+    border-bottom: 1px solid var(--fiveth-color);
+}
+.user_name,.order_price,.order_id,.order_size{
+    padding: 8px;
+}
+.order_size{
+    border-left: 1px solid var(--fiveth-color);
+}
+.order_name{
+    border-left: 1px solid var(--fiveth-color);
+    border-right: 1px solid var(--fiveth-color);
+    padding: 8px 40% 8px 0;
+}
+.user_email{
+    padding: 8px;
+
+}
+
+.product_info{
+    margin-left: 10em;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.input_product_info{
+    border: 1px solid var(--fiveth-color);
+    border-radius: 8px;
+    margin-top: 1em;
+    width: 100%;
+    padding: 8px;
+}
+#input_description_product{
+    margin-top: 1em;
+}
+.each_product{
+    display: flex;
+    border:1px solid var(--fiveth-color);
+    margin: 1em 0;
+    justify-content: space-around;
+}
+.each_product p{
+    padding: 8px;
+}
+.each_product p:nth-child(1){
+    border-right: 1px solid var(--fiveth-color);
+}
+
+.each_product p:nth-child(3){
+    border-left:1px solid var(--fiveth-color) ;
+    padding-left: 4em;
+}
+.product_id{
+    width: 40%;
+    padding: 8px;
+    font-size: 1.25em;
+    border: 1px solid var(--fiveth-color);
+    border-radius: 8px;
+}
+#image_product{
+    margin-bottom: 2em;
+}
+.send_image{
+    border-bottom: 1px solid var(--fiveth-color);
+}
+
+.btn_delete{
+    cursor: pointer;
+}
