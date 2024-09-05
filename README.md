@@ -9,6 +9,7 @@ calculos de fretes, esse ecommerce foi feito para revisao de conteudo relacionad
 <h2>Instalando venv</h2>
 <p>dentro da pasta em que baixou os arquivos
 inicie o comando abaixo:</p>
+
 ```
 python3 venv -m venv 
 ```
