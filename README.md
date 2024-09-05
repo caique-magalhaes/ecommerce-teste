@@ -1,16 +1,15 @@
-#ecommerce fastapi com tortoise-orm
+<h1>Ecommerce fastapi com tortoise-orm</h1>
 
-Ecommerce com Fastapi , tortoise ,Fastapi_email,jwt para gerar o token e pillow para upload de imagem.
+<p>Ecommerce com Fastapi , tortoise ,Fastapi_email,jwt para gerar o token e pillow para upload de imagem.
 Esse ecommerce para teste no qual o adm pode criar os produtos e fazer upload de imagens , foi utilizado
 o tortoise o orm para configurar o servidor e salvar como sqlite. Nao vinculei metodos de pagamentos e nem
-calculos de fretes, esse ecommerce foi feito para revisao de conteudo relacionado ao fastapi e Javascript.
+calculos de fretes, esse ecommerce foi feito para revisao de conteudo relacionado ao fastapi e Javascript.</p>
 
 
-###Instalando venv
+<h2>Instalando venv</h2>
+<p>dentro da pasta em que baixou os arquivos
+inicie o comando abaixo:</p>
 ```
-dentro da pasta em que baixou os arquivos
-inicie o comando abaixo:
-
 python3 venv -m venv 
 ```
 
