@@ -2,9 +2,9 @@ async function findProducts(category) {
     let response = ''
     
     if(category){
-        response = await fetch(`http://127.0.0.1:8000/products/?q=${category}`)
+        response = await fetch(`/products/?q=${category}`)
     }else{
-        response = await fetch("http://127.0.0.1:8000/products/")
+        response = await fetch("/products/")
     }
     
     const products = await response.json()
@@ -20,7 +20,7 @@ export async function findSingleProduct(id){
 }
 
 async function register_user(username,email,password,typeUser) {
-    const createUser = await fetch(`http://127.0.0.1:8000/registration-${typeUser}`,{
+    const createUser = await fetch(`/registration-${typeUser}`,{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({
