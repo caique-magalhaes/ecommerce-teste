@@ -1,3 +1,7 @@
 __pycache__
 venv
 *.pyc
+database.sqlite3
+.env
+database.sqlite3-shm
+database.sqlite3-wal
