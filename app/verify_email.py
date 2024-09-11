@@ -1,15 +1,20 @@
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 from typing import List
 from app.models import User
+from dotenv import dotenv_values
 import jwt
 
-SECRET_KEY = "e0c95cec793095e9f09c"
+configure_env = dotenv_values(".env")
+
+SECRET_KEY = configure_env['SECRET_KEY']
+ALGORITHM = configure_env['ALGORITHM']
+
 conf = ConnectionConfig(
-    MAIL_USERNAME='skylar.robel@ethereal.email',
-    MAIL_PASSWORD='EZgm2pc8AVaNP43mt1',
-    MAIL_FROM='skylar.robel@ethereal.email',
+    MAIL_USERNAME=configure_env['MAIL_USERNAME'],
+    MAIL_PASSWORD=configure_env['MAIL_PASSWORD'],
+    MAIL_FROM=configure_env['MAIL_USERNAME'],
     MAIL_PORT=587,
-    MAIL_SERVER="smtp.ethereal.email",
+    MAIL_SERVER="smtp.gmail.com",
     MAIL_STARTTLS=True,
     MAIL_SSL_TLS=False,
     USE_CREDENTIALS=True,
@@ -23,7 +28,7 @@ async def send_email(email:List, instance:User):
         "username":instance.username
     }
 
-    token = jwt.encode(token_data,SECRET_KEY,algorithm="HS256")
+    token = jwt.encode(token_data,SECRET_KEY,algorithm=ALGORITHM)
 
     template = f'''
         <!DOCTYPE html>

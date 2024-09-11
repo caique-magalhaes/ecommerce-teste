@@ -3,10 +3,13 @@ from fastapi.exceptions import HTTPException
 from app.models import*
 from fastapi.security import OAuth2PasswordBearer
 from fastapi import status,Depends
+from dotenv import dotenv_values
 import jwt
 
-SECRET_KEY = "e0c95cec793095e9f09c"
-ALGORITHM = "HS256"
+configure_env = dotenv_values(".env")
+
+SECRET_KEY = configure_env['SECRET_KEY']
+ALGORITHM = configure_env['ALGORITHM']
 
 pwd_context = CryptContext(schemes=['bcrypt'], deprecated = 'auto')
 oath2_scheme = OAuth2PasswordBearer(tokenUrl='token')
