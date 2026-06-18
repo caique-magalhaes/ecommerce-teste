@@ -1,40 +1,57 @@
-<h1>Ecommerce fastapi com tortoise-orm</h1>
+# Async E-Commerce Platform: FastAPI, Tortoise-ORM & Dynamic JWT Auth
 
-<p>Ecommerce com Fastapi , tortoise ,Fastapi_email,jwt para gerar o token e pillow para upload de imagem.
-Esse ecommerce para teste no qual o adm pode criar os produtos e fazer upload de imagens , foi utilizado
-o tortoise o orm para configurar o servidor e salvar como sqlite. Nao vinculei metodos de pagamentos e nem
-calculos de fretes, esse ecommerce foi feito para revisao de conteudo relacionado ao fastapi e Javascript.</p>
+<p>This e-commerce site uses FastAPI, Tortoise, FastAPI_email, JWT to generate the token, and Pillow for image uploads. This test e-commerce site allows the admin to create products and upload images. Tortoise used ORM to configure the server and save as SQLite. Payment methods and shipping calculations were not included; this e-commerce site was created for content review related to FastAPI and Javascript..</p>
 
+## 🛠️ Tech Stack
+*   **Backend Framework:** FastAPI
+*   **Asynchronous ORM:** Tortoise-ORM (Asynchronous data relationships)
+*   **Security & Auth:** PyJWT (JSON Web Token authentication tracking)
+*   **Asset Processing:** Pillow (Dynamic image compression and processing)
+*   **Automation:** FastAPI-Mail (SMTP server configuration management)
+*   **Database Engine:** SQLite (Configured via tortoise system schemas)
 
-<h2>Instalando venv</h2>
-<p>dentro da pasta em que baixou os arquivos
-inicie o comando abaixo:</p>
+## 🌟 Key Technical Implementations
+
+*   **Asynchronous Content Mapping:** Utilizes Tortoise-ORM to handle user data, secure roles, and catalog persistence concurrently without blocking system cycles.
+*   **Token-Based Verification Pipeline:** Integrates secure JWT tokens to authenticate administrators and protect routes for managing product updates.
+*   **Decoupled Frontend UI Logic:** Employs async JavaScript components on the frontend to communicate with backend endpoints natively without full-page loads.
+*   **Secure SMTP Notification Routing:** Structures an automated validation trigger using FastAPI-Mail to confirm registration.
+
+## 💻 Local Installation & Setup
+
+To run this application locally, follow these steps:
+
+1. Clone the repository:
+```
+git clone https://github.com/caique-magalhaes/ecommerce-teste.git
+
+cd ecommerce-teste
+```
+
+2. Set up and activate a clean Python virtual environment:
 
 ```
 python3 venv -m venv 
 ```
 
-<h1>Ativando venv</h1>
+3. Activating venv:
 
 ```
 windows -> venv\Scripts\activate.bat
 linux -> source venv/bin/activate
 mac -> venv/bin/activate
 ```
-<h1>Instalando Dependencias</h1>
-<p>com a venv ativa execute o codigo abaixo:</p>
-
+3. Install all structural project dependencies:
 ```
 pip install -r requirements.txt
 ```
-<h1>iniciar o app:</h1>
+4. Initialize the ASGI local testing server:
 
 ```
 uvicorn app.main:app --reload
 ```
-<h2>Configurando O envio de E-mail de verificacao</h2>
-<p>Para configurar o envio de e-mail de verificacao para utilizar o seu e-mail dentro da 
-  pasta app do projeto baixado entre no arquivo verify_email.py e configura para seu email seguindo os passos abaixo:</p>
+
+<p>To configure email verification using your email address within the downloaded project's app, go to the verify_email.py file and configure it to your email address following the steps below:</p>
 
 
   ```
