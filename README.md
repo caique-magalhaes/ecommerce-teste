@@ -15,7 +15,7 @@
 *   **Asynchronous Content Mapping:** Utilizes Tortoise-ORM to handle user data, secure roles, and catalog persistence concurrently without blocking system cycles.
 *   **Token-Based Verification Pipeline:** Integrates secure JWT tokens to authenticate administrators and protect routes for managing product updates.
 *   **Decoupled Frontend UI Logic:** Employs async JavaScript components on the frontend to communicate with backend endpoints natively without full-page loads.
-*   **Secure SMTP Notification Routing:** Structures an automated validation trigger using FastAPI-Mail to confirm registration.
+*   **Secure SMTP Notification Routing:** Structures an automated validation trigger using FastAPI-Mail to confirm registration dynamically..
 
 ## 💻 Local Installation & Setup
 
@@ -31,7 +31,7 @@ cd ecommerce-teste
 2. Set up and activate a clean Python virtual environment:
 
 ```
-python3 venv -m venv 
+python3 -m venv .venv 
 ```
 
 3. Activating venv:
